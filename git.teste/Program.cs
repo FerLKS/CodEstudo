@@ -11,6 +11,8 @@ namespace git.teste
             Console.WriteLine("Bom dia!");
 
             Console.WriteLine("Tudo bem?");
+
+            Console.WriteLine("Ok");
         }
     }
 }
