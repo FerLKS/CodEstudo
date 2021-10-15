@@ -29,7 +29,9 @@ namespace Primeiro.Entities
 
         public double Payment ()
         {
+
             return Hours * ValuePerHour;
+
         }
 
 
