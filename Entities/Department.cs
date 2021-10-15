@@ -17,6 +17,7 @@ namespace Primeiro.Entities
         public Department(string name)
         {
             Name = name;
+
         }
 
     }   

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Primeiro.Entities.Enums
 {
-    class WorkerLevel
+    enum WorkerLevel : int
     {
+        Junior = 0,
+        MidLevel = 1,
+        senior = 2
     }
 }

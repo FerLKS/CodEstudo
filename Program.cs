@@ -655,16 +655,80 @@ namespace Primeiro
 
 
 
+            /*
+
+            Console.WriteLine("Enter department's name: ");
+            string deptName = Console.ReadLine();
+            Console.WriteLine("Enter worker data: ");
+            Console.WriteLine("Name: ");
+            string name = Console.ReadLine();
+            Console.Write("Level (Ju8niro/MidLevel/Senior)");
+            WorkerLevel level = Enum.Parse<WorkerLevel>(Console.ReadLine());
+            Console.WriteLine("Base Salary");
+            double baseSalary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Department dept = new Department(deptName);
+            Worker worker = new Worker(name, level, baseSalary, dept);
+
+            Console.WriteLine("How many contract to this worker? ");
+            int n = int.Parse(Console.ReadLine());
+
+            for(int i=1;i<=n;i++)
+            {
+                Console.WriteLine($"Enter #{i} contract data: ");
+                Console.Write("Date (DD/MM/YYYY): ");
+                DateTime date = DateTime.Parse(Console.ReadLine());
+                Console.Write("Value per hour: ");
+                double valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                Console.Write("Duration (hours): ");
+                int hours = int.Parse(Console.ReadLine());
+                HourContract contract = new HourContract(date, valuePerHour, hours);
+                worker.AddContract(contract);
+            }
+
+            Console.WriteLine();
+            Console.Write("Enter month and year to calculate income (MM/YYYY): ");
+            string monthAndYear = Console.ReadLine();
+            int month = int.Parse(monthAndYear.Substring(0, 2));
+            int year = int.Parse(monthAndYear.Substring(3));
+            Console.WriteLine("Name : " + worker.Name);
+            Console.WriteLine("Department: " + worker.Department.Name);
+            Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture));
+
+
+            */
+
+            Console.WriteLine("Enter the number employees: ");
+            int n = int.Parse(Console.ReadLine()));
+
+            List<Employee> list = new List<Employee>();
+
+            for(int i =1; i<= n; i++)
+            {
+                Console.WriteLine($"Employee #{i} data: ");
+                Console.Write("Outsourced (y/n)? ");
+                char ch = char.Parse(Console.ReadLine());
+                Console.Write("Name: ");
+                string nm = Console.ReadLine());
+                Console.Write("Hours: ");
+                int hr = int.Parse(Console.ReadLine());
+                Console.Write("Value per hour: ");
+                double din = double.Parse(Console.ReadLine());
+
+              //  Console.Write("Additional charge: ");
 
 
 
 
+            }
 
 
 
 
 
         }
+    
     }
-  }
+
+}
 
