@@ -6,16 +6,8 @@ namespace projetoXadrez
     {
         static void Main(string[] args)
         {
-        
 
-
-
-
-
-
-
-
-
+            Console.WriteLine("Vasco");
 
         }
     }
