@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "git.teste", "git.teste\git.teste.csproj", "{D753690F-0D00-493B-A459-A9844B56D09D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "projetoXadrez", "git.teste\projetoXadrez.csproj", "{D753690F-0D00-493B-A459-A9844B56D09D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,20 +1,21 @@
 ﻿using System;
 
-namespace git.teste
+namespace projetoXadrez
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        
 
-            Console.WriteLine("Bom dia!");
 
-            Console.WriteLine("Tudo bem?");
 
-            Console.WriteLine("Ok");
 
-            Console.WriteLine("Vasco");
+
+
+
+
+
 
         }
     }
