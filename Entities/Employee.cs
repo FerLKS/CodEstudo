@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+﻿/*using System.Globalization;
 
 namespace Primeiro.Entities
 {
@@ -24,4 +24,4 @@ namespace Primeiro.Entities
                 + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
-}
+}*/

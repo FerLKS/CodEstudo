@@ -702,7 +702,7 @@ namespace Primeiro
 
 
 
-
+            /*
 
             List<Employee> list = new List<Employee>();
 
@@ -750,6 +750,21 @@ namespace Primeiro
                 Console.WriteLine(prod.PriceTag());
 
             }
+
+
+            */
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     
