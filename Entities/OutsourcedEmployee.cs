@@ -3,33 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+
 
 namespace Primeiro.Entities
 {
     class OutsourcedEmployee : Employee
     {
+        private double price;
 
-        public double AdditionalCharge { get; set;}
+        public double additionalCharge { get; set;}
 
         public OutsourcedEmployee()
         {
         }
 
-        public OutsourcedEmployee(double additionalCharge, string name, int hours, double valuePerHour)
-                : base(name,hours,valuePerHour)
+        public OutsourcedEmployee( string name, double price, double additionalCharge)
+                : base(name, price)
         {   
-            AdditionalCharge = additionalCharge;
+            this.additionalCharge = additionalCharge;
         }
 
-        public OutsourcedEmployee(string name, int hours, double valuePerHour, double additionalCharge) : base(name, hours, valuePerHour)
+       
+
+        public OutsourcedEmployee(string name, double price) : base(name, price)
+         {
+
+         }
+        
+        public   double TotalPrice()
         {
+            return price + additionalCharge;
+            
 
         }
-
-        public   double Payment()
+        public override string PriceTag()
         {
-            return base.Payment() + 1.1 * AdditionalCharge;
-
+            return Name
+                + " $ "
+                + TotalPrice().ToString("F2", CultureInfo.InvariantCulture)
+                + " (Customs fee: $ "
+                + additionalCharge.ToString("F2", CultureInfo.InvariantCulture)
+                + ")";
         }
 
 

@@ -2,12 +2,13 @@
 using System.Globalization;
 using System.Collections.Generic;
 using Primeiro.Entities;
-using Primeiro.Entities.Enums;
+
 
 namespace Primeiro
 {
     class Program
     {
+        private static char ch;
 
         static void Main(string[] args)
         {
@@ -698,46 +699,57 @@ namespace Primeiro
 
             */
 
-            Console.WriteLine("Enter the number employees: ");
-            int n = int.Parse(Console.ReadLine());
+
+
+
+
 
             List<Employee> list = new List<Employee>();
 
+
+            Console.WriteLine("Enter the number of products: ");
+            int n = int.Parse(Console.ReadLine());
+
+            
+
             for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine($"Employee #{i} data: ");
-                Console.Write("Outsourced (y/n)? ");
+                Console.WriteLine($"Product #{i} data: ");
+                Console.Write("Common, imported or used (c/i/u)? ");
                 char ch = char.Parse(Console.ReadLine());
                 Console.Write("Name: ");
                 string name = Console.ReadLine();
-                Console.Write("Hours: ");
-                int hours = int.Parse(Console.ReadLine());
-                Console.Write("Value per hour: ");
-                double valuePerHour = double.Parse(Console.ReadLine());
-                if (ch == 'y')
+                Console.Write("Price: ");
+                double price = double.Parse(Console.ReadLine());
+                if (ch == 'i')
                 {
-                    Console.WriteLine("Additional charge: ");
+                    Console.Write("Customs free: ");
                     double additionalCharge = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                    list.Add(new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge));
+                    list.Add(new OutsourcedEmployee(name, price, additionalCharge));
+                }
+                else if (ch == 'u')
+                {
+
+                    Console.Write("Manufacture date (DD/MM/YYYY): ");
+                    DateTime Manufacturedate = DateTime.Parse(Console.ReadLine());
+                    list.Add(new Usedproduct (name, price, Manufacturedate));
                 }
                 else
                 {
-                    list.Add(new Employee(name, hours, valuePerHour));
+                    list.Add(new Employee( name, price));
+
                 }
-                //  Console.Write("Additional charge: ");
+               
+               
             }
 
             Console.WriteLine();
-            Console.WriteLine("PAYMENTS:");
-            foreach (Employee emp in list)
+            Console.WriteLine("PRICE TAGS:");
+            foreach (Employee prod in list)
             {
-                Console.WriteLine(emp.Name + " - $ " + emp.Payment().ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine(prod.PriceTag());
+
             }
-
-
-
-
-
 
         }
     

@@ -1,11 +1,11 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Primeiro.Entities.Enums;
-/*
+
 namespace Primeiro.Entities
 {
     class Worker

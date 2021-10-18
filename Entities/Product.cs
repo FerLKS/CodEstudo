@@ -1,17 +1,17 @@
-﻿using System.Globalization;
+﻿/*using System.Globalization;
 
-namespace Primeiro.Entities
+namespace Course.Entities
 {
-    class Employee
+    class Product
     {
         public string Name { get; set; }
         public double Price { get; set; }
 
-        public Employee()
+        public Product()
         {
         }
 
-        public Employee(string name, double price)
+        public Product(string name, double price)
         {
             Name = name;
             Price = price;
@@ -24,4 +24,4 @@ namespace Primeiro.Entities
                 + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
-}
+}*/
